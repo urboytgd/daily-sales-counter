@@ -1,17 +1,25 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Happy+Monkey&family=Poetsen+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div class="content">
-        <h1>Daily Sales Tracker</h1>
+        <img class="company-logo" src="./acquity logo.png" alt="the orange acquity belize logo">   
+        <h1 class="anton-regular">Daily Sales Tracker</h1>
         <h2 id="count-el">0</h2>
-        <button id="increment-btn" onclick="increment()">+1</button>
-        <button id="save-btn" onclick="save()">Save</button>
+        
+        <div class="middle-btns">
+        <button id="increment-btn" class="btn" onclick="increment()">Sale +1</button>
+        <button id="decrement-btn" class="btn" onclick="decrement()">QC Reject -1</button>
+        <button id="save-btn" class="btn" onclick="save()">Save</button>
+        </div>
+
         <p id="save-el">Sales Streak: </p>
         </div>
-        <script src="index.js">
-            nnerText
-        </script>
+        <script src="index.js"></script>
     </body>
 </html>

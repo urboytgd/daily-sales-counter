@@ -6,16 +6,30 @@ body {
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
-    height: 100vh
+    height: 100vh;
+    font-family: "Anton";
 }
 
 .content {
-    background-color: white;
-    border: 10px solid black;
-    max-width: 60%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: 10px solid rgb(195, 198, 193); */
+    border-radius: 14px;
+    max-width: 50vw;
+    height: 85vh;
     margin: 50px auto;
-    padding: 20px
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: normal;
+  }  
 
 h1,h2,p {
     color: black;
@@ -23,7 +37,17 @@ h1,h2,p {
 
 h1 {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    color: aliceblue;
+    text-shadow: 0px 0px 10px black;
+}
+
+#count-el {
+    margin-bottom: 30px;
+    text-decoration: underline;
+    color: aliceblue;
+    text-shadow: 0px 0px 10px black;
+    font-size: 6rem;
 }
 
 h2 {
@@ -33,20 +57,41 @@ h2 {
 }
 
 button {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     color: white;
     font-weight: bold;
-    width: 200px;
+    width: 300px;
     margin-bottom: 5px;
     border-radius: 14px;
     max-width: 100%;
 }
 
+.middle-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 2rem;
+}
+
 #increment-btn {
     background: green;
+   
+}
+
+#decrement-btn {
+    background-color: red;
 }
 
 #save-btn {
     background: black;
+}
+
+#increment-btn, #decrement-btn, #save-btn {
+    padding: 15px 30px 15px 30px;
+}
+
+#save-el {
+    color: aliceblue;
+    text-shadow: 0px 0px 10px black;
+    font-size: 1.5rem;
 }
